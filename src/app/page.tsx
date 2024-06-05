@@ -1,5 +1,9 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <main>Home</main>;
+  return (
+    <main className="w-screen h-screen relative">
+      <div></div>
+    </main>
+  );
 }
