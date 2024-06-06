@@ -1,19 +1,35 @@
 import React from "react";
 import Image from "next/image";
+import { Socials } from "@/constants";
 
 const Navbar = () => {
   return (
     <div className="fixed top-0 z-[0] w-full h-[100px] bg-transparent flex justify-between items-center px-10 md:px-20">
       <div className="flex flex-row gap-3 items-center">
-        <Image
-          src="/straw-hat-logo_bw.webp"
-          alt="strawhat"
-          width={40}
-          height={40}
-          className="w-full h-full object-contain rounded-full"
-        />
+        <div className="relative">
+          <Image
+            src="/straw-hat-logo_bw.webp"
+            alt="strawhat"
+            width={40}
+            height={40}
+            className="w-full h-full object-contain rounded-full"
+          />
+        </div>
+        <h1 className="text-white text-[23px] font-semibold">
+          Software Developer
+        </h1>
       </div>
-      <h1 className="text-white font-semibold">Look at me! ^_^</h1>
+      <div className="flex flex-row gap-5 mb-2">
+        {Socials.map((social) => (
+          <Image
+            key={social.name}
+            src={social.src}
+            alt={social.name}
+            width={28}
+            height={28}
+          />
+        ))}
+      </div>
     </div>
   );
 };
