@@ -121,7 +121,7 @@ export const NavLinks = [
     link: "/my-skills",
   },
   {
-    name: "/my-projects",
+    name: "/projects",
     icon: RxDashboard,
     link: "/my-projects",
   },
