@@ -1,28 +1,13 @@
 import React from "react";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <div className="footer-container">
-      <p>{new Date().getFullYear()} Matt Doyle</p>
-      <div className="social-icons">
-        <a
-          href="https://github.com/pirateking92"
-          aria-label="GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mattdoyle92/"
-          aria-label="LinkedIn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fa-brands fa-linkedin"></i>
-        </a>
+    <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+      <div className="container p-12 flex justify-between">
+        <span>Matt Doyle</span>
+        <p className="text-slate-600">All rights reserved.</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
