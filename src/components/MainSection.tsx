@@ -13,10 +13,10 @@ const MainSection: React.FC = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col items-center justify-center text-center sm:text-left sm:items-start"
+          className="col-span-8 flex flex-col items-center sm:items-start sm:text-left text-center justify-self-center sm:justify-self-start"
         >
-          <h1 className="text-white mb-4 text-3xl sm:text-3xl lg:text-4xl lg:leading font-semibold">
-            <span className="text bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+          <h1 className="text-white mb-4 text-3xl sm:text-3xl lg:text-4xl lg:leading-tight font-semibold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m{" "}
             </span>
             <br />
@@ -63,11 +63,11 @@ const MainSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] relative">
+          <div className="rounded-full bg-[#181818] w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/propic.png"
               alt="hero image"
-              className="object-cover w-[150%] h-[150%]"
+              className="w-full h-full"
               layout="fill"
             />
           </div>
