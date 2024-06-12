@@ -19,7 +19,7 @@ const projectsData: Project[] = [
     id: 1,
     title: "Cassandra",
     description: "Tarot Card Reading Web App - Go Backend, SvelteKit Frontend",
-    image: "/images/projects/1.png",
+    image: "/images/CassandraProject.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/pirateking92/teamtarot",
     previewUrl: "https://cassandratarot.onrender.com/",
