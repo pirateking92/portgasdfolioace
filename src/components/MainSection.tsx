@@ -15,7 +15,7 @@ const MainSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 flex flex-col items-center sm:items-start sm:text-left text-center justify-self-center sm:justify-self-start"
         >
-          <h1 className="text-white mb-4 text-3xl sm:text-3xl lg:text-4xl lg:leading-tight font-semibold">
+          <h1 className="text-white mb-4 text-3xl sm:text-3xl lg:text-8xl lg:leading-tight font-semibold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m{" "}
             </span>
@@ -36,7 +36,7 @@ const MainSection: React.FC = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-2xl">
             A fullstack developer based in London
           </p>
           <div>
@@ -63,7 +63,7 @@ const MainSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[200px] h-[200px] lg:w-[500px] lg:h-[500px] relative">
             <Image
               src="/images/propic.png"
               alt="hero image"
