@@ -1,16 +1,17 @@
-// import { EmailTemplate } from '../../../components/EmailTemplate';
+import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
+// couldnt figure out how to to do this in typescript
 const resend = new Resend(process.env.RESEND_API_KEY);
+const fromEmail = process.env.FROM_EMAIL;
 
-export async function POST(req: NextRequest) {
+export async function POST(req, res) {
+  const { email, subject, message } = await req.json();
+  console.log(email, subject, message);
   try {
-    const { email, subject, message } = await req.json();
-    console.log(email, subject, message);
-
     const data = await resend.emails.send({
       from: fromEmail,
-      to: [fromEmail, email],
+      to: ["doyle9214@gmail.com", email],
       subject: subject,
       react: (
         <>
@@ -18,10 +19,10 @@ export async function POST(req: NextRequest) {
           <p>Thank you for contacting us!</p>
           <p>New message submitted:</p>
           <p>{message}</p>
+          <p>Sender&apos;s email: {email}</p>
         </>
       ),
     });
-
     return NextResponse.json(data);
   } catch (error) {
     return NextResponse.json({ error });
