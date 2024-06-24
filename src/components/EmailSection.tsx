@@ -68,9 +68,9 @@ const EmailSection: React.FC = () => {
           </h5>
           <p className="text-[#ADB7BE] mb-4 max-w-md">
             {" "}
-            I&apos;m currently looking for new opportunities, my inbox is always
-            open. Whether you have a question or just want to say hi, I&apos;ll
-            try my best to get back to you!
+            I&apos;m currently looking for new opportunities, so if you&apos;re
+            looking for a new developer, need help with a website or software,
+            then please get in touch!
           </p>
           <div className="socials flex flex-row gap-2">
             <Link href="https://github.com/pirateking92">
