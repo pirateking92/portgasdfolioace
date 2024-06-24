@@ -30,17 +30,17 @@ const projectsData: Project[] = [
     description: "Capybara Themed Facebook Clone",
     image: "/images/Capybara.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/pirateking92/capybara_project",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "Satellite",
-    description: "Swift Social Media iOS App",
-    image: "/images/projects/3.png",
+    title: "Marathon Parser",
+    description: "Marathon Results App",
+    image: "/images/marathonParser.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/pirateking92/marathonParser",
+    previewUrl: "https://marathon-parser.vercel.app/",
   },
 ];
 
