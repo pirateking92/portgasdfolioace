@@ -31,7 +31,7 @@ const projectsData: Project[] = [
     image: "/images/Capybara.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/pirateking92/capybara_project",
-    previewUrl: "/",
+    previewUrl: "https://acebookfe.onrender.com/",
   },
   {
     id: 3,
