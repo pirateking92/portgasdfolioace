@@ -1,6 +1,6 @@
 "use client";
 import React, { useTransition, useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import TabButton from "./TabButton";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
