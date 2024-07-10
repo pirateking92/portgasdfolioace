@@ -12,12 +12,13 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>TypeScript</li>
-        <li>Go</li>
-        <li>Python</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>React</li>
+        <li className="flex items-center justify"><span>TypeScript</span><Image src="/images/typescript.png" alt="TypeScript" width={24} height={24} className="ml-2" /></li>
+        <li className="flex items-center justify"><span>Go</span><Image src="/images/go.png" alt="Go" width={34} height={34} className="ml-2" /></li>
+        <li className="flex items-center justify"><span>Python</span><Image src="/images/python.png" alt="Python" width={22} height={22} className="ml-2" /></li>
+        <li className="flex items-center justify"><span>Express</span><Image src="/images/express.png" alt="Express" width={24} height={24} className="ml-2" /></li>
+        <li className="flex items-center justify"><span>PostgreSQL</span><Image src="/images/postgresql.png" alt="Postgres SQL" width={24} height={24} className="ml-2" /></li>
+        <li className="flex items-center justify"><span>React</span><Image src="/images/react.png" alt="React" width={24} height={24} className="ml-2" /></li>
+
       </ul>
     ),
   },
