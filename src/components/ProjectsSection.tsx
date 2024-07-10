@@ -26,7 +26,7 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: "CapybaraBook",
+    title: "CappyBook",
     description: "Capybara Themed Facebook Clone",
     image: "/images/Capybara.png",
     tag: ["All", "Web"],
