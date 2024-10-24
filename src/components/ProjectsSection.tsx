@@ -17,15 +17,6 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "Cassandra",
-    description: "Tarot Card Reading Web App - Go Backend, SvelteKit Frontend",
-    image: "images/CassandraScreenshot.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/pirateking92/teamtarot",
-    previewUrl: "https://cassandratarot.onrender.com/",
-  },
-  {
-    id: 2,
     title: "CappyBook",
     description: "Capybara Themed Facebook Clone",
     image: "/images/Capybara.png",
@@ -34,13 +25,31 @@ const projectsData: Project[] = [
     previewUrl: "https://acebookfe.onrender.com/",
   },
   {
-    id: 3,
+    id: 2,
     title: "Marathon Parser",
     description: "Marathon Results App",
     image: "/images/marathonParser.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/pirateking92/marathonParser",
     previewUrl: "https://marathon-parser.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Cassandra",
+    description: "Tarot Card Reading Web App - Go Backend, SvelteKit Frontend",
+    image: "images/CassandraScreenshot.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/pirateking92/teamtarot",
+    previewUrl: "https://cassandratarot.onrender.com/",
+  },
+  {
+    id: 4,
+    title: "Makers Data Migration",
+    description: "Migration from old to new system - Python, SQL",
+    image: "",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/pirateking92/app_data_scraping",
+    previewUrl: "",
   },
 ];
 
@@ -74,11 +83,11 @@ const ProjectsSection: React.FC = () => {
       className="col-span-8 flex flex-col items-center sm:items-start sm:text-left text-center justify-self-center sm:justify-self-start"
     >
       <section id="projects">
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        <h2 className="text-left text-6xl font-bold text-white mt-4 mb-8 md:mb-12">
           My Projects
         </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-          <ProjectTag
+          {/* <ProjectTag
             onClick={() => handleTagChange("All")}
             name="All"
             isSelected={tag === "All"}
@@ -92,7 +101,7 @@ const ProjectsSection: React.FC = () => {
             onClick={() => handleTagChange("Mobile")}
             name="Mobile"
             isSelected={tag === "Mobile"}
-          />
+          /> */}
         </div>
 
         {/* Attach the ref to the ul element */}

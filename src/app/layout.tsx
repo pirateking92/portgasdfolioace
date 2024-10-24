@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Didact_Gothic } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const mainFontDidact = Didact_Gothic({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-mainFontDidact",
+});
 
 export const metadata: Metadata = {
   title: "Matt Doyle | Software Engineer",
@@ -12,12 +17,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${mainFontDidact.variable}`}>
+      <body>
         {children}
         <Navbar />
       </body>

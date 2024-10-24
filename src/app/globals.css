@@ -17,6 +17,8 @@
 }
 
 body {
+  /* this is where fonts are made to go across the whole site */
+  font-family: var(--font-mainFontDidact), sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
