@@ -24,12 +24,12 @@ const MainSection: React.FC = () => {
               sequence={[
                 "Matt",
                 4000,
-                "a Software Dev",
+                "a Software \nEngineer",
                 4000,
                 "a Web Designer",
                 4000,
-                "a Cool guy",
-                1000,
+                "somewhat of a Data \nEngineer",
+                4000,
               ]}
               wrapper="span"
               speed={50}
@@ -37,7 +37,7 @@ const MainSection: React.FC = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-2xl">
-            A fullstack developer based in London
+            A fullstack engineer based in London
           </p>
           <div>
             <Link
