@@ -165,10 +165,10 @@ const AboutSection = () => {
               acumen and cross-industry expertise. Having spent 7 years teaching
               EFL in South Korea, Japan, and the UK, 1 year as an HR Recruiter
               in Tokyo, I possess a unique perspective that enhances my approach
-              to software development. Currently undertaking the prestigious
-              Makers Software Development course, I am eager to leverage my
-              newfound skills and demonstrate my adaptability across continents
-              and industries. Let&apos;s connect and explore how I can
+              to software development. Having completed the prestigious Makers
+              Software Development Course in May 2024, I am eager to leverage my
+              newfound skills and demonstrate my adaptability across continents,
+              industries and cultures. Let&apos;s connect and explore how I can
               contribute to your team. Looking forward to speaking with you!
             </p>
             <div className="flex flex-row justify-start mt-8">

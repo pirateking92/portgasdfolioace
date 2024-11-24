@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${mainFontDidact.variable}`}>
+    <html lang="en" className={`${mainFontDidact.className}`}>
       <body>
         {children}
         <Navbar />
