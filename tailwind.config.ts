@@ -1,16 +1,15 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
-const { fontFamily } = require("tailwindcss/defaultTheme");
+import { fontFamily } from "tailwindcss/defaultTheme";
 
-const config = {
-  darkMode: ["class"],
+const config: Config = {
+  darkMode: ["class"], // Enables class-based dark mode
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx,jsx,js}",
+    "./components/**/*.{ts,tsx,jsx,js}",
+    "./app/**/*.{ts,tsx,jsx,js}",
+    "./src/**/*.{ts,tsx,jsx,js}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -39,8 +38,8 @@ const config = {
       },
       colors: {
         ...colors,
-        primary: colors.green,
-        secondary: colors.pink,
+        primary: colors.green, // Custom primary color
+        secondary: colors.pink, // Custom secondary color
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -50,6 +49,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+};
 
 export default config;

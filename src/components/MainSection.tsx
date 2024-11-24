@@ -23,7 +23,7 @@ export default function MainSection() {
             <br />
             <FlipWords
               words={words}
-              className="text-white mb-4 text-xl sm:text-3xl lg:text-8xl lg:leading-tight font-semibold"
+              className="text-white sm:text-3xl md: text-3xl lg:text-8xl lg:leading-tight font-semibold"
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-2xl">
@@ -53,7 +53,7 @@ export default function MainSection() {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full mr-5 bg-[#181818] w-[200px] h-[200px] lg:w-[500px] lg:h-[500px] relative">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/propic.png"
               alt="hero image"

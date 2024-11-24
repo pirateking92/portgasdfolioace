@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import AnimatedDropdownMenu from "./AnimatedDropdownMenu";
 
 interface NavLink {
   title: string;
@@ -25,7 +26,7 @@ const navLinks: NavLink[] = [
   },
 ];
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
@@ -37,7 +38,10 @@ const Navbar: React.FC = () => {
         >
           Matt Doyle
         </Link>
-        <div className="mobile-menu block md:hidden">
+        <div className="md:hidden">
+          <AnimatedDropdownMenu links={navLinks} />
+        </div>
+        {/* <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -53,7 +57,7 @@ const Navbar: React.FC = () => {
               <XMarkIcon className="h-5 w-5" />
             </button>
           )}
-        </div>
+        </div> */}
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
@@ -67,6 +71,4 @@ const Navbar: React.FC = () => {
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
-};
-
-export default Navbar;
+}
