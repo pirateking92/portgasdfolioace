@@ -17,12 +17,22 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "CappyBook",
-    description: "Capybara Themed Facebook Clone",
-    image: "/images/Capybara.png",
+    title: "Makers Data Migration",
+    description: "Migration from old to new system - Python, SQL",
+    image: "",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/pirateking92/capybara_project",
-    previewUrl: "https://acebookfe.onrender.com/",
+    gitUrl: "https://github.com/pirateking92/app_data_scraping",
+    previewUrl: "",
+  },
+  {
+    id: 4,
+    title: "Wordpress CMS/NextJS Portfolio",
+    description:
+      "Bespoke portfolio website made with Typescript, NextJS, utlising a Wordpress CMS for a backend",
+    image: "/images/sepysite.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/pirateking92/seportfolio2",
+    previewUrl: "https://sepybaghaei.co.uk/",
   },
   {
     id: 2,
@@ -41,15 +51,6 @@ const projectsData: Project[] = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/pirateking92/teamtarot",
     previewUrl: "https://cassandratarot.onrender.com/",
-  },
-  {
-    id: 4,
-    title: "Makers Data Migration",
-    description: "Migration from old to new system - Python, SQL",
-    image: "",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/pirateking92/app_data_scraping",
-    previewUrl: "",
   },
 ];
 
