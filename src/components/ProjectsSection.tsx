@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 interface Project {
@@ -55,7 +54,7 @@ const projectsData: Project[] = [
 ];
 
 const ProjectsSection: React.FC = () => {
-  const [tag, setTag] = useState<string>("All");
+  const [tag] = useState<string>("All");
 
   // Create a ref to attach to the ul element
   const ref = useRef<HTMLUListElement>(null);
@@ -63,12 +62,8 @@ const ProjectsSection: React.FC = () => {
   // Use the useInView hook with the ref to check if the element is in view
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag: string) => {
-    setTag(newTag);
-  };
-
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const cardVariants = {
